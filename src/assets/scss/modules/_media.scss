@@ -1,0 +1,65 @@
+﻿/* ---------------------------------------------------------------------
+ Media Object
+------------------------------------------------------------------------ */
+
+.media {
+    overflow: hidden;
+}
+
+.media-img {
+    float: left;
+    margin-right: 12px;
+}
+
+.media-img_poster {
+    width: 61px;
+    height: 91px;
+}
+
+.media-bd {
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------------------
+ mediaList
+------------------------------------------------------------------------ */
+
+.mediaList {
+    position: relative;
+}
+
+.mediaList-item {
+    display: block;
+    overflow: hidden;
+    padding: 20px;
+    border-bottom: 2px solid #bbbbbb;
+}
+
+.mediaList-item:nth-of-type(even) {
+    background-color: #dddddd;
+}
+
+
+.mediaList-item-meta {
+    margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    .mediaList-item-meta {
+        display: table-cell;
+        min-width: 350px;
+        margin-bottom: 0;
+    }
+
+    .mediaList-item-description {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+/* States */
+
+.mediaList-item:hover {
+    background-color: #aaddff;
+}

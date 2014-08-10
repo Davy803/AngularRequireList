@@ -1,0 +1,253 @@
+﻿/* ---------------------------------------------------------------------
+ Legacy Styles
+------------------------------------------------------------------------ */
+/* ---------------------------------------------------------------------
+ Modern Styles
+------------------------------------------------------------------------ */
+/* ---------------------------------------------------------------------
+RESET CSS (thanks Eric Meyer)
+------------------------------------------------------------------------ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+:focus {
+  outline: 0; }
+
+html {
+  overflow-y: scroll;
+  /* Always show a vertical scrollbar, even when there is no scrolling */ }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/* ---------------------------------------------------------------------
+ HTML5 Element Reset
+------------------------------------------------------------------------ */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+  display: block; }
+
+audio, canvas, video, progress, picture {
+  display: inline-block; }
+
+template {
+  display: none; }
+
+/* ---------------------------------------------------------------------
+ Form Reset Styles
+------------------------------------------------------------------------ */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-results-button, input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none; }
+
+input[type="search"] {
+  -webkit-appearance: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical; }
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* ---------------------------------------------------------------------
+ utilities
+------------------------------------------------------------------------ */
+.isVisuallyHidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0; }
+
+.isHidden {
+  display: none; }
+
+/* ---------------------------------------------------------------------
+ hList
+------------------------------------------------------------------------ */
+.hList {
+  overflow: hidden; }
+
+.hList > * {
+  float: left; }
+
+.hList > * + * {
+  margin-left: 5px; }
+
+.mix-hList_spaced > * + * {
+  margin-left: 10px; }
+
+/* ---------------------------------------------------------------------
+ Masthead
+------------------------------------------------------------------------ */
+.masthead {
+  padding: 20px;
+  border-bottom: 4px solid #aaaaaa;
+  background-color: #eeeeee; }
+
+.masthead-header {
+  margin-bottom: 10px; }
+
+/* ---------------------------------------------------------------------
+ Boxes
+------------------------------------------------------------------------ */
+.box {
+  padding: 10px 20px; }
+
+.box_movieListing:nth-child(odd) {
+  background-color: #ffffff; }
+
+/* ---------------------------------------------------------------------
+ Headings
+------------------------------------------------------------------------ */
+.hdg {
+  color: #111111;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: arial, helvetica, sans-serif; }
+
+.hdg_pageTitle {
+  font-size: 24px; }
+
+.hdg_modalTitle {
+  margin-bottom: 6px; }
+
+.hdg_movieTitle {
+  margin-bottom: 10px;
+  color: #222222;
+  text-transform: uppercase;
+  font-size: 20px; }
+
+/* ---------------------------------------------------------------------
+ Media Object
+------------------------------------------------------------------------ */
+.media {
+  overflow: hidden; }
+
+.media-img {
+  float: left;
+  margin-right: 12px; }
+
+.media-img_poster {
+  width: 61px;
+  height: 91px; }
+
+.media-bd {
+  overflow: hidden; }
+
+/* ---------------------------------------------------------------------
+ mediaList
+------------------------------------------------------------------------ */
+.mediaList {
+  position: relative; }
+
+.mediaList-item {
+  display: block;
+  overflow: hidden;
+  padding: 20px;
+  border-bottom: 2px solid #bbbbbb; }
+
+.mediaList-item:nth-of-type(even) {
+  background-color: #dddddd; }
+
+.mediaList-item-meta {
+  margin-bottom: 15px; }
+
+@media (min-width: 768px) {
+  .mediaList-item-meta {
+    display: table-cell;
+    min-width: 350px;
+    margin-bottom: 0; }
+  .mediaList-item-description {
+    display: table-cell;
+    vertical-align: middle; } }
+
+/* States */
+.mediaList-item:hover {
+  background-color: #aaddff; }
+
+/* ---------------------------------------------------------------------
+ modal
+------------------------------------------------------------------------ */
+.modal {
+  position: fixed;
+  padding: 22px;
+  width: 100%;
+  height: 100%;
+  background-color: #191919;
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.modal-view {
+  margin: 200px auto;
+  padding: 22px;
+  width: 40%;
+  border: 10px solid #cccccc;
+  border-radius: 10px;
+  background-color: #eeeeee; }
+
+/* ---------------------------------------------------------------------
+ rating
+------------------------------------------------------------------------ */
+.rating {
+  display: block;
+  padding: 5px;
+  border-radius: 99px; }
+
+.rating_certifiedFresh {
+  background-color: #00aa00; }
+
+.rating_fresh {
+  background-color: #006600; }
+
+.rating_rotten {
+  background-color: #964b00; }
+
+.rating_spilled {
+  background-color: #87410e; }
+
+.rating_unknown {
+  background-color: #000099; }
+
+.rating_upright {
+  background-color: #ee204d; }
+
+/* ---------------------------------------------------------------------
+ stack
+------------------------------------------------------------------------ */
+/* .stack {} */
+.stack-chunk + .stack-chunk {
+  margin-top: 10px; }
+
+/*# sourceMappingURL=legacy.css.map */

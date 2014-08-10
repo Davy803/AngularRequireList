@@ -1,0 +1,16 @@
+﻿/* ---------------------------------------------------------------------
+ rating
+------------------------------------------------------------------------ */
+
+.rating {
+    display: block;
+    padding: 5px;
+    border-radius: 99px;
+}
+
+.rating_certifiedFresh { background-color: #00aa00; }
+.rating_fresh { background-color: #006600; }
+.rating_rotten { background-color: #964b00; }
+.rating_spilled { background-color: #87410e; }
+.rating_unknown { background-color: #000099; }
+.rating_upright { background-color: #ee204d; }

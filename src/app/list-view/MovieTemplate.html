@@ -1,0 +1,38 @@
+<li class="mediaList-item">
+    <div class="mediaList-item-meta">
+        <div class="media">
+            <div class="media-img media-img_poster">
+                <img ng-src="{{movie.posters.thumbnail}}" alt="{{movie.title}}" />
+            </div>
+            <div class="media-bd">
+                <h2 class="hdg hdg_movieTitle">{{movie.title}}</h2>
+                <div class="stack">
+                    <div class="stack-chunk">
+                        <ul class="hList mix-hList_spaced">
+                            <li><span>{{movie.runtime}} min.</span></li>
+                            <li><span>{{movie.releaseDates.theater | date:'longDate'}}</span></li>
+                            <li><span>{{movie.mpaaRating}}</span></li>
+                        </ul>
+                    </div>
+                    <div class="stack-chunk">
+                        <ul class="hList">
+                            <li ng-hide="movie.ratings.criticsRating === undefined">
+                                <span class="rating rating_{{movie.ratings.criticsRating | lowerCamelCase}}">
+                                    {{movie.ratings.criticsScore}} - {{movie.ratings.criticsRating}}
+                                </span>
+                            </li>
+                            <li ng-hide="movie.ratings.audienceRating === undefined">
+                                <span class="rating rating_{{movie.ratings.audienceRating | lowerCamelCase}}">
+                                    {{movie.ratings.audienceScore}} - {{movie.ratings.audienceRating}}
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- END stack -->
+            </div> <!-- END media-bd -->
+        </div> <!-- END media -->
+    </div> <!-- END mediaList-item-meta -->
+    <div class="mediaList-item-description">
+        <p>{{movie.synopsis}}</p>
+    </div>    
+</li> <!-- END mediaList-item -->

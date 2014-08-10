@@ -1,0 +1,38 @@
+﻿/* ---------------------------------------------------------------------
+ utilities
+------------------------------------------------------------------------ */
+
+.isVisuallyHidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    border: 0;
+}
+
+.isHidden {
+    display: none;
+}
+
+/* ---------------------------------------------------------------------
+ hList
+------------------------------------------------------------------------ */
+
+.hList {
+    overflow: hidden;
+}
+
+.hList > * {
+    float: left;
+}
+
+.hList > * + * {
+    margin-left: 5px;
+}
+
+.mix-hList_spaced > * + * {
+    margin-left: 10px;
+}

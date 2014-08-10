@@ -1,0 +1,39 @@
+<div class="page-wrapper" ng-controller="MovieListController">
+    <div class="masthead">
+        <div class="masthead-header">
+            <h1 class="hdg hdg_pageTitle">Movie Listing</h1>
+        </div>
+
+        <form class="masthead-controls">
+            <fieldset>
+                <legend class="isVisuallyHidden">Control how movies are listed.</legend>
+
+                <label class="isVisuallyHidden" for="sort">Sort Movies</label>
+                <select ng-model="sort" name="sort" id="sort">
+                    <option value="critic-desc">Critics Score Descending</option>
+                    <option value="critic-asc">Critics Score Ascending</option>
+                    <option value="audience-desc">Audience Score Descending</option>
+                    <option value="audience-asc">Audience Score Ascending</option>
+                    <option value="theater-desc">Most Recent Theater Date</option>
+                    <option value="theater-asc">Oldest Theater Date</option>
+                </select>
+
+                <label class="isVisuallyHidden" for="limit">Limit number of movies</label>
+                <select ng-model="limit" name="limit" id="limit">
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                </select>
+
+                <input type="submit" ng-click="updateView()" value="update" />
+            </fieldset>
+        </form> <!-- END masthead-controls -->
+    </div> <!-- END masthead -->
+
+
+    <ul class="mediaList js-listView">
+        <li class="mediaList-item" ng-repeat="movie in movies" movie="movie">
+        </li> <!-- END mediaList-item -->
+    </ul> <!-- END mediaList -->
+</div> <!-- END page-wrapper -->
