@@ -16,14 +16,14 @@
                     </div>
                     <div class="stack-chunk">
                         <ul class="hList">
-                            <li ng-hide="movie.ratings.criticsRating === undefined">
-                                <span class="rating rating_{{movie.ratings.criticsRating | lowerCamelCase}}">
-                                    {{movie.ratings.criticsScore}} - {{movie.ratings.criticsRating}}
+                            <li>
+                                <span class="rating rating_{{ (movie.ratings.criticsRating || 'unknown') | lowerCamelCase }}">
+                                    {{movie.ratings.criticsScore}} - {{movie.ratings.criticsRating || 'Unknown'}}
                                 </span>
                             </li>
-                            <li ng-hide="movie.ratings.audienceRating === undefined">
-                                <span class="rating rating_{{movie.ratings.audienceRating | lowerCamelCase}}">
-                                    {{movie.ratings.audienceScore}} - {{movie.ratings.audienceRating}}
+                            <li>
+                                <span class="rating rating_{{ (movie.ratings.audienceRating || 'unknown') | lowerCamelCase }}">
+                                    {{movie.ratings.audienceScore}} - {{movie.ratings.audienceRating || 'Unknown'}}
                                 </span>
                             </li>
                         </ul>
